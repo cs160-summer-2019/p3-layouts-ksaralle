@@ -12,9 +12,50 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+    <style>
+      .rect {
+        margin-top: 20px;
+        width: 200px;
+        height: 150px;
+        background-color: #a8323c;
+        
+      }
+      .small-container {
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       
+        
+      }
+      .container {
+        
+        width: 1400px;
+        height: 700px;
+        display: flex;
+        
+        background-color: #f28a93;
+        flex-direction: column;
+        
+        align-items: stretch;
+        justify-content: flex-start;
+      }
+    </style>
 	</head>
 	<body>
-		<!-- Your layout here -->
+		<div class="container">
+        <div class="small-container">
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+        </div>
+        <div class="small-container">
+             <div class="rect"></div>
+        </div>
+ 
+    </div>
 
 	</body>
 </html>

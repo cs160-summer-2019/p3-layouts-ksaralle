@@ -12,9 +12,36 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+    
+    
+   <style>
+      .rect {
+        
+        height: 200px;
+        
+        background-color: #a8323c;
+      }
+      .container {
+       
+        width: 1400px;
+        height: 700px;
+        display: flex;
+        
+        background-color: #f28a93;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-evenly;
+      }
+    </style> 
+    
 	</head>
 	<body>
-		<!-- Your layout here -->
+		<div class="container">
+        <div class="rect"></div>
+        <div class="rect"></div>
+        <div class="rect"></div>
+    </div>
 
 	</body>
 </html>
